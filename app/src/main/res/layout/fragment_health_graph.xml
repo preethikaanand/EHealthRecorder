@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_HealthGraphFrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground"
+    tools:context=".ui.HealthGraphFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <Spinner
+            android:id="@+id/spinner_diseaseType_graph"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="20dp"
+            android:prompt="@string/spinner_disease_type_graph_title"
+            android:spinnerMode="dialog"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <Spinner
+            android:id="@+id/spinner_duration"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/spinner_diseaseType_graph"
+            android:layout_marginEnd="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:prompt="@string/spinner_graph_duration_title"
+            android:spinnerMode="dialog"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <Spinner
+            android:id="@+id/spinner_day_graph"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/spinner_duration"
+            android:layout_marginEnd="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:prompt="@string/spinner_graph_day_title"
+            android:spinnerMode="dialog"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/spinner_month_graph"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/spinner_day_graph"
+            android:layout_marginEnd="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:prompt="@string/spinner_graph_month_title"
+            android:spinnerMode="dialog"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/spinner_year_graph"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/spinner_month_graph"
+            android:layout_marginEnd="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:prompt="@string/spinner_graph_year_title"
+            android:spinnerMode="dialog"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/show_graph_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/spinner_year_graph"
+            android:layout_marginEnd="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:text="Show graph"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:typeface="serif" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/add_data_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
+            android:clickable="true"
+            android:src="@mipmap/ic_plus"
+            app:backgroundTint="#FF0000"
+            app:rippleColor="#FFF" />
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:key="emergency_notification"
+        android:summary="Turn on toggle to activate emergency notification"
+        android:title="Emergency Notification" />
+
+    <EditTextPreference
+        android:inputType="textMultiLine"
+        android:key="disease_name"
+        android:summary="Enter disease name to be displayed on emergency notification"
+        android:title="Disease Name" >
+    </EditTextPreference>
+
+    <EditTextPreference
+        android:inputType="phone"
+        android:maxLength="10"
+        android:key="emergency_contactNo"
+        android:summary="Enter emergency contact to be displayed on emergency notification"
+        android:title="Emergency Contact" >
+    </EditTextPreference>
+
+</PreferenceScreen>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/pump_img_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="5dp">
+
+        <RelativeLayout
+            android:id="@+id/document_reltive_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.eHealth.recorder.util.MyTextView
+                android:id="@+id/image_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.8"
+                android:background="#a6a6a6"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:maxWidth="20dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="vvsfv"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:typeface="serif"
+                android:textStyle="bold"></com.eHealth.recorder.util.MyTextView>
+
+            <com.parse.ParseImageView
+                android:id="@+id/document_img_thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/image_name"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

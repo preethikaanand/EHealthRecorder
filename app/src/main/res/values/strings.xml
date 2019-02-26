@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">eHealthRecorder</string>
+    <string name="title_Settings">Settings</string>
+    <string name="title_Logout">Logout</string>
+    <string name="no_prescription_records">Sorry, No prescription found!!</string>
+    <string name="no_nominator_records">Sorry, None has nominated you!!</string>
+    <string name="no_nominee_records">You have not nominated anyone yet!!</string>
+    <string name="no_document_records">No document found!!</string>
+    <string name="spinner_disease_type_title">Disease type</string>
+    <string name="spinner_disease_type_graph_title">Disease type</string>
+    <string name="spinner_graph_duration_title">Duration</string>
+    <string name="spinner_graph_day_title">Day</string>
+    <string name="spinner_graph_month_title">Month</string>
+    <string name="spinner_graph_year_title">Year</string>
+
+    <string name="medicalTestHeading"><![CDATA[<b><i>Medical Tests  </i></b>]]>%1$s</string>
+    <string name="precautionHeading"><![CDATA[<b><i>Precautions  </i></b>]]>%1$s</string>
+    <string name="endDateHeading"><![CDATA[<b><i>End date  </i></b>]]>%1$s</string>
+    <string name="morningMedicineHeading"><![CDATA[<b><i>Morning  </i></b>]]>%1$s</string>
+    <string name="noonMedicineHeading"><![CDATA[<b><i>Noon  </i></b>]]>%1$s</string>
+    <string name="eveMedicineHeading"><![CDATA[<b><i>Evening  </i></b>]]>%1$s</string>
+    <string name="prescribedByHeading"><![CDATA[<b><i>Prescribed By  </i></b>]]>%1$s</string>
+
+    <string name="diseaseName_notification"><![CDATA[<i>Disease: </i><br>]]>%1$s</string>
+    <string name="emergencyContactNo_notification"><![CDATA[<i>Emergency Contact: </i>]]>%1$s</string>
+
+    <string name="login_email_text">Email</string>
+    <string name="reset_submit_button">Submit</string>
+    <string name="reset_password_text">Reset Password</string>
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:text_input="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/custom_ripple_effect"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <RelativeLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/material_PrescMedNameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                text_input:errorTextAppearance="@android:color/black">
+
+                <EditText
+                    android:id="@+id/editText_PrescMedName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Medicine Name"
+                    android:inputType="text"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+            </android.support.design.widget.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/checkBox_morningTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/material_PrescMedNameEdit"
+                android:text="Morning"
+                android:textSize="15sp"
+                android:typeface="serif" />
+
+            <CheckBox
+                android:id="@+id/checkBox_noonTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkBox_morningTime"
+                android:text="Noon"
+                android:textSize="15sp"
+                android:typeface="serif" />
+
+            <CheckBox
+                android:id="@+id/checkBox_eveningTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkBox_noonTime"
+                android:text="Evening"
+                android:textSize="15sp"
+                android:typeface="serif" />
+
+            <View
+                android:id="@+id/view_border"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/checkBox_eveningTime"
+                android:background="@color/tab_Indicator_Color" />
+
+            <TextView
+                android:id="@+id/addTextView"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/view_border"
+                android:alpha="0.8"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:paddingTop="5dp"
+                android:text="+"
+                android:textColor="#ff272727"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

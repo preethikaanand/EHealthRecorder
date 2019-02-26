@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eHealth.recorder">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.eHealth.recorder.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.eHealth.recorder.permission.C2D_MESSAGE" />
+
+    <application
+        android:name="com.eHealth.recorder.application.EHealthRecorderApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ehealthrecorder_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".ui.LoginActivity"
+            android:label="@string/app_name"
+            android:noHistory="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.PatientProfileActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".ui.DoctorProfileActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".requestmanager.AlarmStarterActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".ui.PreferenceSettingsActivity"
+            android:label="@string/title_Settings"
+            android:screenOrientation="portrait"></activity>
+
+        <receiver
+            android:name=".requestmanager.AlarmReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="MEDICINE_NOTIFY_RECEIVER" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".requestmanager.ResetAlarmReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".requestmanager.PrescriptionListService"
+            android:exported="false"></service>
+
+        <!-- My custom receiver -->
+        <receiver
+            android:name=".requestmanager.NotificationParseReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.eHealth.recorder.RECEIVE_PUSH" />
+            </intent-filter>
+        </receiver>
+        <!-- END my custom receiver -->
+
+
+        <!-- Required for Parse.com notifications -->
+        <service android:name="com.parse.PushService" />
+
+        <receiver
+            android:name="com.parse.ParsePushBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.eHealth.recorder" />
+            </intent-filter>
+        </receiver>
+        <!-- END Parse.com requirements -->
+
+    </application>
+
+</manifest>

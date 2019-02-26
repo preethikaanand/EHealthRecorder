@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/windowBackground"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="5dp">
+
+            <RelativeLayout
+                android:id="@+id/relative_prescription_list_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/medicalTestText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha=".60"
+                    android:lineSpacingMultiplier="1.2"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:typeface="serif" />
+
+                <View
+                    android:id="@+id/medicalTest_view_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/medicalTestText"
+                    android:layout_marginBottom="2dp"
+                    android:background="@color/tab_Indicator_Color" />
+
+                <TextView
+                    android:id="@+id/precautionText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/medicalTest_view_border"
+                    android:alpha=".60"
+                    android:lineSpacingMultiplier="1.2"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:typeface="serif" />
+
+                <View
+                    android:id="@+id/precaution_view_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/precautionText"
+                    android:layout_marginBottom="2dp"
+                    android:background="@color/tab_Indicator_Color" />
+
+                <TextView
+                    android:id="@+id/endDateText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/precaution_view_border"
+                    android:alpha=".60"
+                    android:lineSpacingMultiplier="1.2"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:typeface="serif" />
+
+                <View
+                    android:id="@+id/endDate_view_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/endDateText"
+                    android:layout_marginBottom="2dp"
+                    android:background="@color/tab_Indicator_Color" />
+
+                <LinearLayout
+                    android:id="@+id/medicines_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/endDate_view_border"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/medicinesHeadingText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha=".60"
+                        android:paddingTop="10dp"
+                        android:text="Medicines"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold|italic"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:id="@+id/morningMedicineText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/medicinesHeadingText"
+                        android:alpha=".60"
+                        android:lineSpacingMultiplier="1.2"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:paddingTop="10dp"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:id="@+id/noonMedicineText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/morningMedicineText"
+                        android:alpha=".60"
+                        android:lineSpacingMultiplier="1.2"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:paddingTop="10dp"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:id="@+id/eveMedicineText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/noonMedicineText"
+                        android:alpha=".60"
+                        android:lineSpacingMultiplier="1.2"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:paddingTop="10dp"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:typeface="serif" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>

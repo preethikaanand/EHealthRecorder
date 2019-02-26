@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:text_input="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/patientInfoText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha=".60"
+            android:gravity="center"
+            android:text="Patient Information"
+            android:textColor="@color/colorBlack"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/material_PrescemailEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            text_input:errorTextAppearance="@android:color/black">
+
+            <EditText
+                android:id="@+id/edittext_PrescEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@null"
+                android:editable="false"
+                android:hint="EMAIL"
+                android:inputType="none"
+                android:text="abc@gmail.com"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/material_PrescnameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            text_input:errorTextAppearance="@android:color/black">
+
+            <EditText
+                android:id="@+id/edittext_PrescName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@null"
+                android:editable="false"
+                android:hint="NAME"
+                android:inputType="none"
+                android:text="abc"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/material_PrescDobEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            text_input:errorTextAppearance="@android:color/black">
+
+            <EditText
+                android:id="@+id/editText_PrescDob"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@null"
+                android:editable="false"
+                android:hint="DOB"
+                android:inputType="none"
+                android:text="01/01/1000"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/medicalPrescDataText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:alpha=".60"
+            android:gravity="center"
+            android:text="Medicine Detail"
+            android:textColor="@color/colorBlack"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/material_PrescDiseaseEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            text_input:errorTextAppearance="@android:color/black">
+
+            <EditText
+                android:id="@+id/editText_PrescDisease"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginStart="20dp"
+                android:hint="Disease Name"
+                android:inputType="textMultiLine"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/material_PrescMedTestsEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            text_input:errorTextAppearance="@android:color/black">
+
+            <EditText
+                android:id="@+id/editText_PrescMedTests"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginStart="20dp"
+                android:hint="Medical Tests"
+                android:inputType="textMultiLine"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/material_PrescPrecautionEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            text_input:errorTextAppearance="@android:color/black">
+
+            <EditText
+                android:id="@+id/editText_PrescPrecaution"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginStart="20dp"
+                android:hint="Precaution"
+                android:inputType="textMultiLine"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/material_PrescEndDateEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            text_input:errorTextAppearance="@android:color/black">
+
+            <EditText
+                android:id="@+id/editText_PrescEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginStart="20dp"
+                android:editable="false"
+                android:hint="End date for prescription"
+                android:inputType="none"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/morning_timeCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/custom_ripple_effect"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <RelativeLayout
+                android:id="@+id/top_Morning_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.eHealth.recorder.util.MyTextView
+                    android:id="@+id/morning_timeTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:alpha="0.8"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:maxWidth="20dp"
+                    android:paddingTop="10dp"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="Morning Time Medicine"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:typeface="serif">
+                </com.eHealth.recorder.util.MyTextView>
+
+                <View
+                    android:id="@+id/morning_view_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/morning_timeTextView"
+                    android:layout_marginBottom="50dp"
+                    android:background="@color/tab_Indicator_Color" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/material_PrescMorningMedNameEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/morning_view_border"
+                    android:layout_marginBottom="20dp"
+                    text_input:errorTextAppearance="@android:color/black">
+
+                    <EditText
+                        android:id="@+id/editText_PrescMorningMedName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Medicine Name"
+                        android:inputType="textMultiLine"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    android:id="@+id/morning_presc_view_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/material_PrescMorningMedNameEdit"
+                    android:layout_marginBottom="50dp"
+                    android:background="@color/tab_Indicator_Color" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/noon_timeCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/custom_ripple_effect"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <RelativeLayout
+                android:id="@+id/top_noon_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.eHealth.recorder.util.MyTextView
+                    android:id="@+id/noon_timeTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:alpha="0.8"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:maxWidth="20dp"
+                    android:paddingTop="10dp"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="Noon Time Medicine"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:typeface="serif">
+                </com.eHealth.recorder.util.MyTextView>
+
+                <View
+                    android:id="@+id/noon_view_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/noon_timeTextView"
+                    android:layout_marginBottom="50dp"
+                    android:background="@color/tab_Indicator_Color" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/material_PrescNoonMedNameEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/noon_view_border"
+                    android:layout_marginBottom="20dp"
+                    text_input:errorTextAppearance="@android:color/black">
+
+                    <EditText
+                        android:id="@+id/editText_PrescNoonMedName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Medicine Name"
+                        android:inputType="textMultiLine"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/eve_timeCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/custom_ripple_effect"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <RelativeLayout
+                android:id="@+id/top_eve_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.eHealth.recorder.util.MyTextView
+                    android:id="@+id/eve_timeTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:alpha="0.8"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:maxWidth="20dp"
+                    android:paddingTop="10dp"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="Evening Time Medicine"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:typeface="serif">
+                </com.eHealth.recorder.util.MyTextView>
+
+                <View
+                    android:id="@+id/eve_view_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/eve_timeTextView"
+                    android:layout_marginBottom="50dp"
+                    android:background="@color/tab_Indicator_Color" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/material_PrescEveMedNameEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/eve_view_border"
+                    android:layout_marginBottom="20dp"
+                    text_input:errorTextAppearance="@android:color/black">
+
+                    <EditText
+                        android:id="@+id/editText_PrescEveMedName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Medicine Name"
+                        android:inputType="textMultiLine"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/prescibeItButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:text="Prescribe It"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:typeface="serif" />
+    </LinearLayout>
+</ScrollView>
